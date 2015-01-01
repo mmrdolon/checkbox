@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<form action="add.php" method="post">
+
+<label> Full name: </label>
+<input type="text" name="full_name"><br><br>
+
+<label> Hobby: </label><br>
+<input type="checkbox" name="hobby_reading" value="reading"  > Reading<br>
+<input type="checkbox" name="hobby_playing" value="playing" > Playing<br>
+<input type="checkbox" name="hobby_gardening" value="gardening"> Gardening<br>
+<input type="checkbox" name="hobby_travelling" value="travelling" > Travelling<br><br>
+
+    <label> Food: </label><br>
+    <input type="checkbox" name="food[]" value="Local">Local<br>
+    <input type="checkbox" name="food[]" value="Continental" >Continental<br>
+    <input type="checkbox" name="food[]" value="Chainese">Chainese<br>
+    <input type="checkbox" name="food[]" value="Thai">Thai<br><br>
+
+<label> Preferred Job Location:</label>
+<select name="job_location[]" multiple="multiple" >
+
+    <option value="Dhaka">Dhaka</option>
+    <option value="Chittagong">Chittagong</option>
+    <option value="Khulna">Khulna</option>
+    <option value="Rajshahi">Rajshahi</option>
+    <option value="Barisal">Barisal</option>
+    <option value="Kustia">Kustia</option>
+    <option value="Jamalpur">Jamalpur</option>
+    <option value="Rangpur">Rangpur</option>
+    <option value="Patuakhali">Patuakhali</option>
+    <option value="Muladi">Muladi</option>
+    <option value="Jhalkathi">Jhalkathi</option>
+    <option value="Pirojpur">Pirojpur</option>
+    <option value="Borguna">Borguna</option>
+    <option value="Savar">Savar</option>
+    <option value="B.Baria">B.Baria</option>
+    <option value="Tangail">Tangail</option>
+    <option value="Narayangonj">Narayangonj</option>
+    <option value="Sylhet">Sylhet</option>
+    <option value="Maymensingh">Maymensingh</option>
+    <option value="Narail">Narail</option>
+
+</select>
+    <br>
+    <br>
+
+
+    <input type="hidden" name="created_date"><br>
+
+
+    <input type="hidden" name="modified_date"><br>
+
+    <button type="submit">Submit</button>
+
+
+</form>
+
+<a href="add.php">Go to List</a>
+</body>
+</html>
